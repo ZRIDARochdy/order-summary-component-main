@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* ~~~~~~~~~~~ Variables style ~~~~~~~~~~~ */
+
+:root {
+	--ff: 'Red Hat Display', sans-serif;
+	--fs-body: 1rem;
+
+	--paleblue: hsl(225, 100%, 94%);
+	--brightblue: hsl(245, 75%, 52%); /* Button */
+	--verypaleblue: hsl(225, 100%, 98%);
+	--desaturatedblue: hsl(224, 23%, 55%);
+	--darkblue: hsl(223, 47%, 23%);
+}
+
+/* ~~~~~~~~~~~ Reset style ~~~~~~~~~~~ */
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* ~~~~~~~~~~~ General Style ~~~~~~~~~~~ */
+
+body {
+	font-family: var(--ff);
+	font-size: var(--fs-body);
+	min-height: calc(100vh - 1px);
+	display: grid;
+	place-content: center;
+}
+
+button {
+	background: transparent;
+	font: inherit;
+	cursor: pointer;
+}
