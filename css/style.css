@@ -146,6 +146,20 @@ img {
 	color: var(--darkblue);
 }
 
+/* ====================================================== */
+/* ==================== Desktop Style =================== */
+/* ====================================================== */
+
+@media only screen and (min-width: 23.43875em) {
+	.bg-body {
+		background: url(../images/pattern-background-desktop.svg) no-repeat
+			center/cover;
+	}
+	.card__container {
+		padding: 2rem;
+	}
+}
+
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
 
 .flex {
