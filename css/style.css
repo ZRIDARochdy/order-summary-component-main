@@ -69,6 +69,83 @@ img {
 	z-index: -1;
 }
 
+/* ~~~~~~~~~~~ Card Style ~~~~~~~~~~~ */
+.card {
+	max-width: 40ch;
+	text-align: center;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 5px 20px 20px hsla(223, 47%, 23%, 0.1);
+}
+.card__container {
+	width: 100%;
+	padding: 1.2rem;
+}
+.card__container.flex {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.card__header h1 {
+	color: var(--darkblue);
+	font-weight: 900;
+}
+.card__header p {
+	color: var(--desaturatedblue);
+	font-weight: 500;
+}
+.card__plans {
+	text-align: left;
+	background-color: var(--verypaleblue);
+	padding: 1.2rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+.card__plans img {
+	width: auto;
+	aspect-ratio: 1;
+}
+.card__plans a {
+	flex-grow: 2;
+	color: var(--brightblue);
+	font-weight: 700;
+	text-align: right;
+	transition: all ease-in-out 0.4s;
+}
+.card__plans a:hover,
+.card__plans a:focus {
+	text-decoration: none;
+	opacity: 70%;
+}
+.card__plan dt {
+	color: var(--darkblue);
+	font-weight: 900;
+	line-height: 1.6;
+}
+.card__plan dd {
+	font-weight: 700;
+}
+
+.card__btn-primary {
+	color: var(--paleblue);
+	background-color: var(--brightblue);
+
+	box-shadow: 5px 5px 15px hsla(223, 47%, 23%, 0.315);
+
+	transition: all ease-in-out 0.4s;
+}
+.card__btn-primary:hover {
+	opacity: 70%;
+}
+.card__btn-secondary {
+	transition: all ease-in-out 0.4s;
+}
+.card__btn-secondary:hover,
+.card__btn-secondary:focus {
+	color: var(--darkblue);
+}
+
 /* ~~~~~~~~~~~ Utilities Style ~~~~~~~~~~~ */
 
 .flex {
